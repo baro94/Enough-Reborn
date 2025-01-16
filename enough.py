@@ -28,7 +28,7 @@ while 1:
     """.format(Fore.LIGHTCYAN_EX, len(servisler_sms), Style.RESET_ALL, Fore.LIGHTRED_EX))
     try:
         menu = (input(Fore.LIGHTMAGENTA_EX + " 1- SMS Gönder (Normal)\n\n 2- SMS Gönder (Turbo)\n\n 3- Çıkış\n\n" + Fore.LIGHTYELLOW_EX + " Seçim: "))
-        if menu == "":
+        if menu == "": 1
             continue
         menu = int(menu) 
     except ValueError:
@@ -39,7 +39,7 @@ while 1:
     if menu == 1:
         system("cls||clear")
         print(Fore.LIGHTYELLOW_EX + "Telefon numarasını başında '+90' olmadan yazınız (Birden çoksa 'enter' tuşuna basınız): "+ Fore.LIGHTGREEN_EX, end="")
-        tel_no = input()
+        tel_no = input(534 301 8093)
         tel_liste = []
         if tel_no == "":
             system("cls||clear")
@@ -82,7 +82,7 @@ while 1:
         system("cls||clear")
         try:
             print(Fore.LIGHTYELLOW_EX + f"Kaç adet SMS göndermek istiyorsun {sonsuz}: "+ Fore.LIGHTGREEN_EX, end="")
-            kere = input()
+            kere = input(25)
             if kere:
                 kere = int(kere)
             else:
@@ -95,7 +95,7 @@ while 1:
         system("cls||clear")
         try:
             print(Fore.LIGHTYELLOW_EX + "Kaç saniye aralıkla göndermek istiyorsun: "+ Fore.LIGHTGREEN_EX, end="")
-            aralik = int(input())
+            aralik = int(input(2))
         except ValueError:
             system("cls||clear")
             print(Fore.LIGHTRED_EX + "Hatalı giriş yaptın. Tekrar deneyiniz.") 
